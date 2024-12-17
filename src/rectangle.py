@@ -1,6 +1,6 @@
 # Прямоугольник
-from src.figure import Figure
-from src.triangle import *
+from figure import Figure
+
 
 class Rectangle(Figure):
 

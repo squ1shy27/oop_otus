@@ -1,4 +1,4 @@
-from src.figure import Figure
+from figure import Figure
 
 import math
 
@@ -27,5 +27,3 @@ class Triangle(Figure):
 
 
 triangle = Triangle(5, 7, 9)
-triangle.get_perimeter
-triangle.get_area
