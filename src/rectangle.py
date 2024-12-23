@@ -1,6 +1,11 @@
+import os
+import sys
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+PATH_LOG = os.path.dirname(os.path.abspath(ROOT_DIR))
+sys.path.append(PATH_LOG)
 # Прямоугольник
-from src.figure import Figure
-from src.triangle import *
+from figure import Figure
+
 
 class Rectangle(Figure):
 

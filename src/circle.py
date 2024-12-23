@@ -1,21 +1,24 @@
 # Круг
 import math
-from src.figure import Figure
-from src.triangle import *
-from src.rectangle import *
+from figure import Figure
+import os
+import sys
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+PATH_LOG = os.path.dirname(os.path.abspath(ROOT_DIR))
+sys.path.append(PATH_LOG)
 
 class Circle(Figure):
     def __init__(self, radius):
         self.radius = radius
+
     @property
     def get_area(self):
         return math.pi * (self.radius ** 2)
-
 
     @property
     def get_perimetr(self):
         return 2 * math.pi * self.radius
 
+
 circle = Circle(8)
-circle.get_area
-circle.get_perimetr
+
